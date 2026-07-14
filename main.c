@@ -19,6 +19,8 @@ do {
 printf("shRoom ~ %% ");
 fgets(input, MAX_SIZE, stdin);
 
+wordCount = 0;
+
 // loop to iterate through user input
 for(int i = 0; i < MAX_SIZE; i++){
   
@@ -34,11 +36,6 @@ for(int i = 0; i < MAX_SIZE; i++){
    }
 
 }
-
-// for(int i = 0; input[i] != '\0'; i++) {
-//   words[wordCount] = &input[i];
-//   wordCount++;
-// }
 
 testPrint(words[0]);
 

@@ -21,6 +21,9 @@ fgets(input, MAX_SIZE, stdin);
 
 wordCount = 0;
 
+words[wordCount] = &input[0];
+wordCount++;
+
 // loop to iterate through user input
 for(int i = 0; i < MAX_SIZE; i++){
   
@@ -37,7 +40,7 @@ for(int i = 0; i < MAX_SIZE; i++){
 
 }
 
-testPrint(words[0]);
+testPrint(words[1]);
 
 } while ((strcmp(input, "exit")) != 0);
 
